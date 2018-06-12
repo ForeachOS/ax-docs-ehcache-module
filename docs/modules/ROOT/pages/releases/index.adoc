@@ -25,7 +25,7 @@ EhcacheModule follows a https://semver.org[semantic versioning] scheme.
 |===
 |Module |Type |Description
 
-|{debug-web-module-url}[DebugWebModule]
+|{url-DebugWebModule}[DebugWebModule]
 |optional
 |Enables the <<debug-controllers,debug controllers>>.
 

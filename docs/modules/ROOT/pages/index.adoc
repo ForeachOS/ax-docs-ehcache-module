@@ -1,24 +1,24 @@
 = EhcacheModule
 
-{module-name} provides support for Ehcache in other modules.   It creates an Ehcache cache manager and hooks it up to the Spring `CacheManager` infrastructure.
+EhcacheModule provides support for Ehcache in other modules.   It creates an Ehcache cache manager and hooks it up to the Spring `CacheManager` infrastructure.
  The module also provides <<debug-controllers,debug web controllers>> for viewing cache statistics and flushing the caches.
 
 [[logger-management]]
 == Cache manager
-{module-name} requires a valid ehcache configuration to be specified, either via an xml resource (*ehcacheModule.configurationResource* property) or
+EhcacheModule requires a valid ehcache configuration to be specified, either via an xml resource (*ehcacheModule.configurationResource* property) or
   a `net.sf.ehcache.config.Configuration` instance (*ehcacheModule.configurationObject* property).  Upon bootstrapping the cache manager will be created and available
   as a Spring `CacheManager` implementation.
 
-{module-name} will also activate support for the http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html#cache-annotations[cache related annotations]
+EhcacheModule will also activate support for the http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html#cache-annotations[cache related annotations]
 in every module.  This would be the equivalent of putting `@EnableCaching` in every module.
 
 TIP: Modules should avoid wiring Ehcache beans directly but use the http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html[Spring cache abstraction layer].
 
 [[debug-controllers]]
 == Debug web controllers
-NOTE: Only available if {debug-web-module-url}[DebugWebModule] is present.
+NOTE: Only available if {url-DebugWebModule}[DebugWebModule] is present.
 
-When active, {module-name} adds a section *Cache overview*  to the debug menu.  The debug web controller
+When active, EhcacheModule adds a section *Cache overview*  to the debug menu.  The debug web controller
 supports multiple Ehcache cache managers and offers the following functions for each cache manager:
 
  * see cache statistics
