@@ -1,0 +1,26 @@
+= Module settings
+
+|===
+|Property |Type |Description |Default
+
+|ehcacheModule.configurationResource
+|`Resource.class`
+|Ehcache XML resource file.
+|_classpath:ehcache.xml_
+
+|ehcacheModule.configurationObject
+|`net.sf.ehcache.config.Configuration.class`
+|Configuration class instance.
+|_null_
+
+|ehcacheModule.cacheManagerName
+|`String.class`
+|Name of the CacheManager instance.
+|_null_
+
+|ehcacheModule.cacheManagerIsShared
+|`boolean`
+|Should the created CacheManager be shared at the ClassLoader level.
+|_true_
+
+|===
