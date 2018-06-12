@@ -1,0 +1,5 @@
+name: ehcache-module
+title: "Module: Caching - Ehcache"
+version: 1.0.1
+nav:
+- modules/ROOT/nav.adoc
