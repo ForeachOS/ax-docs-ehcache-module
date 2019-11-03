@@ -1,6 +1,12 @@
 = 2.x.x release notes
 
 [#2-0-0]
-== 2.0.0.RELEASE
-* *Requires Across 5.0.0.*
-* Spring upgrade related changes
+== 2.0.0-SNAPSHOT
+
+This release requires Across 5.0.0.
+
+* debug web support has been updated:
+** the navigation section has been changed from _Cache overview_ to _Cache browser / Ehcache_
+** support for `EhCacheCache` details has been added to the default _Cache browser_
+*** events of type `DebugCacheStatistics<EhCacheCache>` are handled by EhcacheModule
+* the `@EnableCaching` module configuration is now injected as optional configuration in other modules, no longer forcing an `ApplicationContext` bootstrap
