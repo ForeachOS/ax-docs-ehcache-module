@@ -5,6 +5,15 @@
 
 This release requires Across 5.0.0.
 
+=== Extension module
+EhcacheModule configuration has been modified to extend the AcrossContextInfrastructureModule configuration.
+It no longer starts its own `ApplicationContext`.
+
+Most applications should have no effect from this, but any code directly accessing the EhcacheModule bean factory would now fail.
+
+Module configurations added to EhcacheModule should be added to AcrossContextInfrastructureModule instead.
+
+=== Changelist
 * debug web support has been updated:
 ** the navigation section has been changed from _Cache overview_ to _Cache browser / Ehcache_
 ** support for `EhCacheCache` details has been added to the default _Cache browser_
