@@ -3,7 +3,7 @@
 [#2-0-0]
 == 2.0.0.RELEASE
 
-This release requires Across 5.0.0.
+This release requires Across 5.0.1.
 
 === Extension module
 EhcacheModule configuration has been modified to extend the AcrossContextInfrastructureModule configuration.
